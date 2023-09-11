@@ -4,7 +4,8 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 35px;
 }
 
 /*Left side images */
@@ -41,4 +42,21 @@ body {
 
 .logo img {
   height: 10vh;
+}
+
+/*Right-side*/
+.header {
+  margin-top: 100px;
+  width: 70%;
+}
+
+form {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+input {
+  display: flex;
+  flex-flow: column wrap;
+  text-transform: uppercase;
 }
