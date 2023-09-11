@@ -1,3 +1,44 @@
-h1 {
-  color: red;
+body {
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/*Left side images */
+.left-side {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+}
+
+.picture {
+  background-image: url(./sakura-tree.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 40vw;
+}
+
+.logo {
+  display: flex;
+  flex-flow: row wrap;
+  height: auto;
+  background-color: rgba(13, 10, 5, 0.6);
+  position: relative;
+  top: 20vh;
+  gap: 1vw;
+  padding: 15px 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo h1 {
+  color: #fff;
+}
+
+.logo img {
+  height: 10vh;
 }
