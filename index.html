@@ -51,13 +51,21 @@
               </div>
               <div class="input">
                 <label for="password">Password</label>
-                <input type="password" id="password" required />
+                <input name="password" type="password" id="password" required />
               </div>
               <div class="input">
                 <label for="confirm-password">Confirm Password</label>
-                <input type="password" id="confirm-password" required />
+                <input
+                  name="confirm-password"
+                  type="password"
+                  id="confirm-password"
+                  required
+                />
               </div>
-              <button>Create Account</button>
+              <p id="message"></p>
+              <button type="submit" onClick="return checkPassword()">
+                Create Account
+              </button>
             </div>
           </form>
         </div>
@@ -69,5 +77,6 @@
         </div>
       </div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
