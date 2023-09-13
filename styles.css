@@ -10,6 +10,13 @@ body {
   margin: 0;
   background-color: var(--primary-color);
   cursor: default;
+  font-family: "Oswald", sans-serif;
+}
+
+h1,
+h3,
+h5 {
+  font-family: "Playfair Display", serif;
 }
 
 .grid {
