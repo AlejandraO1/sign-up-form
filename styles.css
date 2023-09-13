@@ -3,6 +3,7 @@
   --secondary-color: #c86b85;
   --tertiary-color: #f5eee6;
   --accent-color: #e6a4b4;
+  --transition: all 250ms ease-in-out;
 }
 
 body {
@@ -102,6 +103,7 @@ button {
   border-radius: 10px;
   background-color: var(--primary-color);
   font-size: 1.1rem;
+  transition: var(--transition);
 }
 
 h5 {
@@ -113,4 +115,21 @@ h5 {
 h5 span {
   color: var(--secondary-color);
   font-weight: 900;
+  transition: var(--transition);
+}
+
+/*Effects*/
+input:focus {
+  border: 3px solid var(--accent-color);
+  outline: none;
+}
+
+button:hover {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+h5 span:hover {
+  color: var(--accent-color);
+  background-color: var(--tertiary-color);
 }
