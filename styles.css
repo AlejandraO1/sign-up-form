@@ -1,5 +1,13 @@
+:root {
+  --primary-color: #c86b85;
+  --secondary-color: #f3d7ca;
+  --tertiary-color: #f5eee6;
+  --accent-color: #e6a4b4;
+}
+
 body {
   margin: 0;
+  background-color: var(--primary-color);
 }
 
 .grid {
@@ -48,15 +56,30 @@ body {
 .header {
   margin-top: 100px;
   width: 70%;
+  background-color: var(--accent-color);
 }
 
 form {
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 50px;
 }
 
 input {
-  display: flex;
-  flex-flow: column wrap;
-  text-transform: uppercase;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px 5px 5px 10px;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 50vw;
+}
+
+button {
+  margin-top: 15px;
+  padding: 15px;
 }
